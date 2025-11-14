@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Teton Conspiracy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Wyoming.svg/250px-Flag_of_Wyoming.svg.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>THE TETON CONSPIRACY</h1>
+            <p class="subtitle">A Jackson Hole Investigation</p>
+        </header>
+        
+        <div class="character-info">
+            <div class="character-details">
+                <div class="character-name">Ann O'donnell</div>
+                <div class="character-description">Former 1st Lieutenant, United States Army. No phone, no address, no baggage. Just the skills to get the job done.</div>
+            </div>
+        </div>
+        
+        <div class="story-container">
+            <div class="image-container">
+                <div class="image-loading">Loading Jackson Hole scene...</div>
+                <img id="story-image" class="story-image hidden" alt="Wyoming Scene">
+            </div>
+            
+            <div id="story-text" class="story-text">
+                <div class="location-tag">Million Dollar Cowboy Bar, Jackson Hole</div>
+                <p>The scent of saddle leather and pine smoke hangs in the air as you finish your coffee at the polished mahogany bar. A ranch owner named Ben Carter approaches, his cowboy boots making soft thuds on the wooden floor.</p>
+                
+                <div class="dialogue character-speech">"Mr. O'Donnell? Heard tell you're the one to see when the law moves slower'n molasses in January."</div>
+                
+                <p>He slides a photo across the weathered wooden table. It shows a rugged man in his forties with a honest face.</p>
+                
+                <div class="dialogue character-speech">"My foreman, Jim Weaver. Good man, solid as they come. Disappeared three days back while checkin' fences up in the Gros Ventre. Sheriff says he probably just took off, but hell—Jim wouldn't abandon his horses. Just ain't in his nature."</div>
+                
+                <p>Ben's calloused hands grip his hat nervously. He's the real deal—a Wyoming rancher through and through.</p>
+            </div>
+            
+            <div class="choices-container" id="choices-container">
+                <button class="choice-btn" data-next="takeCase">"Ranch folk don't spook easy. Tell me what's got you worried."</button>
+                <button class="choice-btn" data-next="walkAway">"Appreciate you coming by, Ben, but I'm working another case right now."</button>
+                <button class="choice-btn" data-next="askQuestions">"Before I commit, I need to know what Jim was into lately."</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-label">INSTINCT</div>
+                    <div id="instinct-value" class="stat-value">8</div>
+                    <div class="stat-bar"><div id="instinct-bar" class="stat-fill" style="width: 80%"></div></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">COMBAT</div>
+                    <div id="combat-value" class="stat-value">9</div>
+                    <div class="stat-bar"><div id="combat-bar" class="stat-fill" style="width: 90%"></div></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">INVESTIGATION</div>
+                    <div id="investigation-value" class="stat-value">7</div>
+                    <div class="stat-bar"><div id="investigation-bar" class="stat-fill" style="width: 70%"></div></div>
+                </div>
+            </div>
+            
+            <button id="restart-btn" class="restart-btn hidden">NEW INVESTIGATION</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
