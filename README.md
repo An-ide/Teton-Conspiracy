@@ -26,6 +26,4 @@ You are Ann O'Donnell - former 1st Lieutenant, United States Army. No phone, no 
 - **Styling**: CSS Grid, Flexbox, CSS Variables
 - **Fonts**: Google Fonts (Playfair Display, Source Sans Pro, Special Elite)
 - **Images**: High-quality Wyoming photography from Pexels
-- **Hosting**: Netlify (with custom domain)
 
-## 📁 Project Structure
